@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCloningGame", "TheCloningGame\TheCloningGame\TheCloningGame.csproj", "{B6CD9244-7DBC-41E7-939D-16407E59A5F8}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "TheCloningGameContent", "TheCloningGame\TheCloningGameContent\TheCloningGameContent.contentproj", "{E39AF988-08E2-4930-B806-7DB2A4E5CCA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6CD9244-7DBC-41E7-939D-16407E59A5F8}.Debug|x86.ActiveCfg = Debug|x86
+		{B6CD9244-7DBC-41E7-939D-16407E59A5F8}.Debug|x86.Build.0 = Debug|x86
+		{B6CD9244-7DBC-41E7-939D-16407E59A5F8}.Release|x86.ActiveCfg = Release|x86
+		{B6CD9244-7DBC-41E7-939D-16407E59A5F8}.Release|x86.Build.0 = Release|x86
+		{E39AF988-08E2-4930-B806-7DB2A4E5CCA0}.Debug|x86.ActiveCfg = Debug|x86
+		{E39AF988-08E2-4930-B806-7DB2A4E5CCA0}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

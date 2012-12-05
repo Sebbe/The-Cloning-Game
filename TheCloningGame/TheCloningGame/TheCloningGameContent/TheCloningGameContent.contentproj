@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E39AF988-08E2-4930-B806-7DB2A4E5CCA0}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TheCloningGameContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Body_Hits\Body_Hit_01.wav">
+      <Name>Body_Hit_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_02.wav">
+      <Name>Body_Hit_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_03.wav">
+      <Name>Body_Hit_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_04.wav">
+      <Name>Body_Hit_04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_05.wav">
+      <Name>Body_Hit_05</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_06.wav">
+      <Name>Body_Hit_06</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_07.wav">
+      <Name>Body_Hit_07</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_08.wav">
+      <Name>Body_Hit_08</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_09.wav">
+      <Name>Body_Hit_09</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_10.wav">
+      <Name>Body_Hit_10</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_11.wav">
+      <Name>Body_Hit_11</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_12.wav">
+      <Name>Body_Hit_12</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_13.wav">
+      <Name>Body_Hit_13</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_14.wav">
+      <Name>Body_Hit_14</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_15.wav">
+      <Name>Body_Hit_15</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_16.wav">
+      <Name>Body_Hit_16</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_17.wav">
+      <Name>Body_Hit_17</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_18.wav">
+      <Name>Body_Hit_18</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_19.wav">
+      <Name>Body_Hit_19</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_20.wav">
+      <Name>Body_Hit_20</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_21.wav">
+      <Name>Body_Hit_21</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_22.wav">
+      <Name>Body_Hit_22</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_23.wav">
+      <Name>Body_Hit_23</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_24.wav">
+      <Name>Body_Hit_24</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_25.wav">
+      <Name>Body_Hit_25</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_26.wav">
+      <Name>Body_Hit_26</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_27.wav">
+      <Name>Body_Hit_27</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_28.wav">
+      <Name>Body_Hit_28</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_29.wav">
+      <Name>Body_Hit_29</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_30.wav">
+      <Name>Body_Hit_30</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_31.wav">
+      <Name>Body_Hit_31</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_32.wav">
+      <Name>Body_Hit_32</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_33.wav">
+      <Name>Body_Hit_33</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_34.wav">
+      <Name>Body_Hit_34</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_35.wav">
+      <Name>Body_Hit_35</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_36.wav">
+      <Name>Body_Hit_36</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_37.wav">
+      <Name>Body_Hit_37</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_38.wav">
+      <Name>Body_Hit_38</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_39.wav">
+      <Name>Body_Hit_39</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_40.wav">
+      <Name>Body_Hit_40</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_41.wav">
+      <Name>Body_Hit_41</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_42.wav">
+      <Name>Body_Hit_42</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Body_Hits\Body_Hit_43.wav">
+      <Name>Body_Hit_43</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\City_Ambience\City_Amb_01.wav">
+      <Name>City_Amb_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\City_Ambience\City_Amb_02.wav">
+      <Name>City_Amb_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\City_Ambience\City_Amb_03.wav">
+      <Name>City_Amb_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Explosions\Explo1.wav">
+      <Name>Explo1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Explosions\Explo2.wav">
+      <Name>Explo2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Explosions\Explo3.wav">
+      <Name>Explo3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Explosions\Explo4.wav">
+      <Name>Explo4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Concrete\Footstep_Concrete_01.wav">
+      <Name>Footstep_Concrete_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Concrete\Footstep_Concrete_02.wav">
+      <Name>Footstep_Concrete_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Concrete\Footstep_Concrete_03.wav">
+      <Name>Footstep_Concrete_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Concrete\Footstep_Concrete_04.wav">
+      <Name>Footstep_Concrete_04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Concrete\Footstep_Concrete_05.wav">
+      <Name>Footstep_Concrete_05</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Dirt\fs_general_dirt_01.wav">
+      <Name>fs_general_dirt_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Dirt\fs_general_dirt_02.wav">
+      <Name>fs_general_dirt_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Dirt\fs_general_dirt_03.wav">
+      <Name>fs_general_dirt_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Footsteps\Dirt\fs_general_dirt_04.wav">
+      <Name>fs_general_dirt_04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\equip.wav">
+      <Name>equip</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\fire.wav">
+      <Name>fire</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\fletcher_01.wav">
+      <Name>fletcher_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\fletcher_02.wav">
+      <Name>fletcher_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\fletcher_03.wav">
+      <Name>fletcher_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\fletcher_04.wav">
+      <Name>fletcher_04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\fletcher_05.wav">
+      <Name>fletcher_05</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\fletcher_06.wav">
+      <Name>fletcher_06</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\gun_mono.wav">
+      <Name>gun_mono</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Fletcher\reload.wav">
+      <Name>reload</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\equip.wav">
+      <Name>equip</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\fire.wav">
+      <Name>fire</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\MiinigunWindup#1.wav">
+      <Name>MiinigunWindup#1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\MinigunWindupAndFireLooped1.wav">
+      <Name>MinigunWindupAndFireLooped1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\MinigunWindupAndFireLooped2.wav">
+      <Name>MinigunWindupAndFireLooped2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\MinigunWindup_7_21b.wav">
+      <Name>MinigunWindup_7_21b</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\MinigunWindup_7_21c.wav">
+      <Name>MinigunWindup_7_21c</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\Minigun_S&amp;WModel19.wav">
+      <Name>Minigun_S&amp;WModel19</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\MiniReload1.wav">
+      <Name>MiniReload1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Guns\Minigun\MiniReLoad2.wav">
+      <Name>MiniReLoad2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_01.wav">
+      <Name>AfternoonAmbientBirdOneShot_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_02.wav">
+      <Name>AfternoonAmbientBirdOneShot_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_03.wav">
+      <Name>AfternoonAmbientBirdOneShot_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_04.wav">
+      <Name>AfternoonAmbientBirdOneShot_04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_05.wav">
+      <Name>AfternoonAmbientBirdOneShot_05</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_06.wav">
+      <Name>AfternoonAmbientBirdOneShot_06</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_07.wav">
+      <Name>AfternoonAmbientBirdOneShot_07</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_08.wav">
+      <Name>AfternoonAmbientBirdOneShot_08</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_09.wav">
+      <Name>AfternoonAmbientBirdOneShot_09</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Birds\AfternoonAmbientBirdOneShot_10.wav">
+      <Name>AfternoonAmbientBirdOneShot_10</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_01.wav">
+      <Name>NightAmbientCreatureOneShot_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_02.wav">
+      <Name>NightAmbientCreatureOneShot_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_03.wav">
+      <Name>NightAmbientCreatureOneShot_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_04.wav">
+      <Name>NightAmbientCreatureOneShot_04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_05.wav">
+      <Name>NightAmbientCreatureOneShot_05</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_06.wav">
+      <Name>NightAmbientCreatureOneShot_06</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_07.wav">
+      <Name>NightAmbientCreatureOneShot_07</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_08.wav">
+      <Name>NightAmbientCreatureOneShot_08</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_09.wav">
+      <Name>NightAmbientCreatureOneShot_09</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_10.wav">
+      <Name>NightAmbientCreatureOneShot_10</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_01.wav">
+      <Name>AfternoonAmbienceSimple_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_02.wav">
+      <Name>AfternoonAmbienceSimple_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_03.wav">
+      <Name>AfternoonAmbienceSimple_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Night_Loop\NightAmbienceSimple_01.wav">
+      <Name>NightAmbienceSimple_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Night_Loop\NightAmbienceSimple_02.wav">
+      <Name>NightAmbienceSimple_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Wind\AfternoonAmbientWindOneShot_01.wav">
+      <Name>AfternoonAmbientWindOneShot_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Wind\AfternoonAmbientWindOneShot_02.wav">
+      <Name>AfternoonAmbientWindOneShot_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Wind\AfternoonAmbientWindOneShot_03.wav">
+      <Name>AfternoonAmbientWindOneShot_03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Wind\AfternoonAmbientWindOneShot_04.wav">
+      <Name>AfternoonAmbientWindOneShot_04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Nature_Ambience\Nature_Wind\AfternoonAmbientWindOneShot_05.wav">
+      <Name>AfternoonAmbientWindOneShot_05</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\ErrorUI\UIerror1.wav">
+      <Name>UIerror1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\ErrorUI\UIerror2.wav">
+      <Name>UIerror2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\ErrorUI\UIerror3.wav">
+      <Name>UIerror3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\ErrorUI\UIerror4.wav">
+      <Name>UIerror4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\ErrorUI\UIerror5.wav">
+      <Name>UIerror5</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\ErrorUI\UIerror6.wav">
+      <Name>UIerror6</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks01.wav">
+      <Name>UI_Clicks01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks02.wav">
+      <Name>UI_Clicks02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks03.wav">
+      <Name>UI_Clicks03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks04.wav">
+      <Name>UI_Clicks04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks05.wav">
+      <Name>UI_Clicks05</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks06.wav">
+      <Name>UI_Clicks06</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks07.wav">
+      <Name>UI_Clicks07</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks08.wav">
+      <Name>UI_Clicks08</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks09.wav">
+      <Name>UI_Clicks09</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks10.wav">
+      <Name>UI_Clicks10</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks11.wav">
+      <Name>UI_Clicks11</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks12.wav">
+      <Name>UI_Clicks12</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks13.wav">
+      <Name>UI_Clicks13</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks14.wav">
+      <Name>UI_Clicks14</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks15.wav">
+      <Name>UI_Clicks15</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks16.wav">
+      <Name>UI_Clicks16</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks17.wav">
+      <Name>UI_Clicks17</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks18.wav">
+      <Name>UI_Clicks18</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks19.wav">
+      <Name>UI_Clicks19</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks20.wav">
+      <Name>UI_Clicks20</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\GenericButtonClicks\UI_Clicks21.wav">
+      <Name>UI_Clicks21</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\ScrollE.wav">
+      <Name>ScrollE</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UIdivebeep.wav">
+      <Name>UIdivebeep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc01.wav">
+      <Name>UI_Misc01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc02.wav">
+      <Name>UI_Misc02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc03.wav">
+      <Name>UI_Misc03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc04.wav">
+      <Name>UI_Misc04</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc05.wav">
+      <Name>UI_Misc05</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc06.wav">
+      <Name>UI_Misc06</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc07.wav">
+      <Name>UI_Misc07</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc08.wav">
+      <Name>UI_Misc08</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc09.wav">
+      <Name>UI_Misc09</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc10.wav">
+      <Name>UI_Misc10</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc11.wav">
+      <Name>UI_Misc11</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc12.wav">
+      <Name>UI_Misc12</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc13.wav">
+      <Name>UI_Misc13</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc14.wav">
+      <Name>UI_Misc14</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc15.wav">
+      <Name>UI_Misc15</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc16.wav">
+      <Name>UI_Misc16</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc17.wav">
+      <Name>UI_Misc17</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc18.wav">
+      <Name>UI_Misc18</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc19.wav">
+      <Name>UI_Misc19</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc20.wav">
+      <Name>UI_Misc20</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc21.wav">
+      <Name>UI_Misc21</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc22.wav">
+      <Name>UI_Misc22</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\UI_Misc23.wav">
+      <Name>UI_Misc23</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\WeirdMetalicSelect.wav">
+      <Name>WeirdMetalicSelect</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UI\MiscUI\WeirdMetalicSelectDelicate.wav">
+      <Name>WeirdMetalicSelectDelicate</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\long_whoosh_00.wav">
+      <Name>long_whoosh_00</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\long_whoosh_01.wav">
+      <Name>long_whoosh_01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\long_whoosh_02.wav">
+      <Name>long_whoosh_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\med_whoosh_00.wav">
+      <Name>med_whoosh_00</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\med_whoosh_02.wav">
+      <Name>med_whoosh_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\short_whoosh_02.wav">
+      <Name>short_whoosh_02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\Whoosh0.wav">
+      <Name>Whoosh0</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\Whoosh2.wav">
+      <Name>Whoosh2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Whoosh\Whoosh4.wav">
+      <Name>Whoosh4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pictures\player_tileset.png">
+      <Name>player_tileset</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ColorKeyColor>32, 156, 0, 255</ProcessorParameters_ColorKeyColor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
