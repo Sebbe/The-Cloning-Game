@@ -76,6 +76,7 @@
     <Compile Include="CollisionSystem\GameObjectCollidable.cs" />
     <Compile Include="CollisionSystem\IManageCollisionsService.cs" />
     <Compile Include="GameObject.cs" />
+    <Compile Include="GameObjects\floor.cs" />
     <Compile Include="GameObjects\Player.cs" />
     <Compile Include="Input\IInputService.cs" />
     <Compile Include="Input\InputManager.cs" />

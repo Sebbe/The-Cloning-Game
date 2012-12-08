@@ -51,7 +51,8 @@ namespace TheCloningGame
             //Draw all the objects in the objectlist);
             foreach (GameObject go in objects)
             {
-                go.Draw(gameTime);
+                if(go.IsActive())
+                    go.Draw(gameTime);
             }
             base.Draw(gameTime);
             spriteBatch.End();

@@ -13,13 +13,17 @@ namespace TheCloningGame.GameObjects
         protected SpriteBatch spriteBatch;
         protected Game game;
 
-        protected Texture2D playerArt;
+        protected Texture2D PlayerArt;
 
         private const int SpriteWidth = 24;
         private const int SpriteHeight = 32;
         protected Vector2 _size;
         protected Rectangle _sourceRectangle;
+        protected Rectangle _drawBox;
+
         protected float rotation;
+        protected float rotateTo;
+        protected float gravity;
 
         protected ObjectManager objectManager;
         protected IManageCollisionsService collisionManager;
@@ -28,31 +32,32 @@ namespace TheCloningGame.GameObjects
         private int DrawSpriteWidth = 0;
         private int DrawSpriteHeight = 0;
 
+        private Vector2 origo;
+        private bool inAir;
+
         int _animationFrame;
         float _animationTimer;
         int _animationWalk;
         int _startFrame = 0;
         int _endFrame = 3;
-        private const float animationStepTime = 1f / 3;
+        private const float animationStepTime = 1f / 10;
 
         int _character = 0;
 
-        private bool isActive;
         public Player(Game baseGame, SpriteBatch spriteBatchToUse, Vector2 position)
             : base(position)
         {
             spriteBatch = spriteBatchToUse;
+            gravity = 981f;
+            rotateTo = 0;
             game = baseGame;
             collisionBox = new Rectangle((int) position.X, (int) position.Y, 0, 0);
+            _drawBox = new Rectangle((int)position.X, (int)position.Y, 0, 0);
             _size = new Vector2(64, 72);
-            isActive = true;
+            rotation = 0;
+            inAir = true;
         }
-
-        public bool Active() { return isActive; }
-        public void SetActive(bool active)
-        {
-            isActive = active; 
-        }
+        
         public void SetCharacter(int charact)
         {
             _character = charact;
@@ -69,9 +74,10 @@ namespace TheCloningGame.GameObjects
 
         public void LoadContent()
         {
-            playerArt = game.Content.Load<Texture2D>(@"Pictures/player_tileset");
+            PlayerArt = game.Content.Load<Texture2D>(@"Pictures/player_tileset");
             collisionBox.Width = SpriteWidth;
             collisionBox.Height = SpriteHeight;
+            origo = new Vector2(SpriteWidth / 2, SpriteHeight / 2);
             objectManager = (ObjectManager) game.Services.GetService(typeof (ObjectManager));
             collisionManager = (IManageCollisionsService) game.Services.GetService((typeof (IManageCollisionsService)));
             _input = (IInputService) game.Services.GetService(typeof (IInputService));
@@ -79,45 +85,68 @@ namespace TheCloningGame.GameObjects
 
         public override void Update(GameTime gameTime)
         {
-            if(_input.IsKeyDown(Keys.W))
+            _animationTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            /*
+           if(_input.IsKeyDown(Keys.W))
             {
                 _animationWalk = 0;
-                Animate((float)gameTime.ElapsedGameTime.TotalSeconds);
+                Animate();
                 position.Y -= movementPerSecond*(float)gameTime.ElapsedGameTime.TotalSeconds;
             } else if(_input.IsKeyDown(Keys.S))
             {
                 _animationWalk = 2;
-                Animate((float)gameTime.ElapsedGameTime.TotalSeconds);
+                Animate();
                 position.Y += movementPerSecond*(float) gameTime.ElapsedGameTime.TotalSeconds;
+            }*/
+            
+            if(!inAir && _input.IsKeyPressed(Keys.Space))
+            {
+                inAir = true;
+                gravity = -gravity;
+                rotateTo += 3.14f;
             }
 
+            if(rotateTo > rotation)
+            {
+                rotation += 9*(float)gameTime.ElapsedGameTime.TotalSeconds;
+                if(rotation > rotateTo)
+                {
+                    rotation = rotateTo;
+                }
+            }
+
+            if(inAir)
+            {
+                position.Y += gravity * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
             if(_input.IsKeyDown(Keys.A))
             {
                 _animationWalk = 3;
-                Animate((float)gameTime.ElapsedGameTime.TotalSeconds);
+                Animate();
                 position.X -= movementPerSecond * (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
             else if (_input.IsKeyDown(Keys.D))
             {
                 _animationWalk = 1;
-                Animate((float)gameTime.ElapsedGameTime.TotalSeconds);
+                Animate();
                 position.X += movementPerSecond * (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
-            rotation += 1 * (float)gameTime.ElapsedGameTime.TotalSeconds;
-            CollisionBox = new Rectangle((int)position.X, (int)position.Y, (int)_size.X, (int)_size.Y);
+            //rotation += 1 * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            CollisionBox = new Rectangle((int)position.X, (int)position.Y, (int)_size.X, (int)_size.Y / 2);
+            _drawBox = new Rectangle((int)position.X, (int)position.Y, (int)_size.X, (int)_size.Y);
             _sourceRectangle = new Rectangle(DrawSpriteWidth + SpriteWidth * _animationFrame, DrawSpriteHeight + SpriteHeight * _animationWalk, SpriteWidth, SpriteHeight);
             base.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime)
         {
-            spriteBatch.Draw(playerArt, collisionBox, _sourceRectangle, Color.White);
+            spriteBatch.Draw(PlayerArt, _drawBox, _sourceRectangle, Color.White, rotation, origo, SpriteEffects.None, 0);
             base.Draw(gameTime);
         }
 
-        private void Animate(float deltaTime)
+        private void Animate()
         {
-            _animationTimer += deltaTime;
+            
             if (_animationTimer >= animationStepTime)
             {
                 _animationFrame++;
@@ -126,6 +155,21 @@ namespace TheCloningGame.GameObjects
                 {
                     _animationFrame = _startFrame;
                 }
+            }
+        }
+
+        public override void Collision(GameObjectCollidable goc)
+        {
+            if (goc as Floor != null)
+            {
+                if (gravity > 0)
+                {
+                    position.Y = goc.CollisionBox.Top - _size.X/2;
+                } else
+                {
+                    position.Y = goc.CollisionBox.Bottom + _size.X/2;
+                }
+                inAir = false;
             }
         }
     }

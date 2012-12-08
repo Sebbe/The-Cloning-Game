@@ -28,6 +28,8 @@ namespace TheCloningGame
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferWidth = 1024;
+            graphics.PreferredBackBufferHeight = 900;
             Content.RootDirectory = "Content";
             
         }
