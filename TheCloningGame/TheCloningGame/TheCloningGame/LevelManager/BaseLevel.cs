@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using TheCloningGame.CollisionSystem;
+using TheCloningGame.GameObjects;
 
 namespace TheCloningGame.LevelManager
 {
@@ -53,6 +54,34 @@ namespace TheCloningGame.LevelManager
         public virtual bool IsLevelLoaded()
         {
             return levelLoaded;
+        }
+
+        public virtual void BuildLevel()
+        {
+            Floor temp = new Floor(TheGame, TheSpriteBatch, new Vector2(0, 860), new Vector2(1024, 40));
+            temp.LoadContent();
+
+            objectManager.RegisterObject(temp);
+            collisionManager.RegisterObject(temp);
+
+
+
+            temp = new Floor(TheGame, TheSpriteBatch, new Vector2(0, 0), new Vector2(1024, 40));
+            temp.LoadContent();
+
+            objectManager.RegisterObject(temp);
+            collisionManager.RegisterObject(temp);
+
+
+            Wall tempWall = new Wall(TheGame, TheSpriteBatch, new Vector2(0, 40), new Vector2(40, 824));
+            tempWall.LoadContent();
+            objectManager.RegisterObject(tempWall);
+            collisionManager.RegisterObject(tempWall);
+
+            tempWall = new Wall(TheGame, TheSpriteBatch, new Vector2(984, 40), new Vector2(40, 824));
+            tempWall.LoadContent();
+            objectManager.RegisterObject(tempWall);
+            collisionManager.RegisterObject(tempWall);
         }
     }
 }

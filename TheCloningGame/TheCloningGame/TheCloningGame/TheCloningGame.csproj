@@ -76,8 +76,11 @@
     <Compile Include="CollisionSystem\GameObjectCollidable.cs" />
     <Compile Include="CollisionSystem\IManageCollisionsService.cs" />
     <Compile Include="GameObject.cs" />
+    <Compile Include="GameObjects\Door.cs" />
     <Compile Include="GameObjects\floor.cs" />
+    <Compile Include="GameObjects\Key.cs" />
     <Compile Include="GameObjects\Player.cs" />
+    <Compile Include="GameObjects\Wall.cs" />
     <Compile Include="Input\IInputService.cs" />
     <Compile Include="Input\InputManager.cs" />
     <Compile Include="LevelManager\BaseLevel.cs" />
@@ -85,6 +88,7 @@
     <Compile Include="LevelManager\IManageLevels.cs" />
     <Compile Include="LevelManager\LevelManager.cs" />
     <Compile Include="Levels\LevelOne.cs" />
+    <Compile Include="Levels\LevelTwo.cs" />
     <Compile Include="ObjectManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />

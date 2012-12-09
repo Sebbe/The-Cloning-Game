@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using TheCloningGame.GameObjects;
 using TheCloningGame.Input;
 using TheCloningGame.CollisionSystem;
@@ -24,6 +25,8 @@ namespace TheCloningGame
         private IManageCollisionsService collisionDetectionService;
         private InputManager _input;
         private IManageLevels levelManager;
+
+        private Song _backgroundMusic;
 
         public Game1()
         {
@@ -70,6 +73,10 @@ namespace TheCloningGame
         protected override void LoadContent()
         {
             curLevel.LoadContent();
+            _backgroundMusic = Content.Load<Song>(
+                @"Audio/Nature_Ambience/Nature_Day_Loop/AfternoonAmbienceSimple_03");
+            MediaPlayer.IsRepeating = true;
+            MediaPlayer.Play(_backgroundMusic);
             // TODO: use this.Content to load your game content here
         }
 
@@ -131,9 +138,6 @@ namespace TheCloningGame
 
             objectManager.Draw(gameTime);
 
-            // TODO: Add your drawing code here
-
-            base.Draw(gameTime);
         }
     }
 }

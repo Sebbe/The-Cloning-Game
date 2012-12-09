@@ -47,7 +47,7 @@ namespace TheCloningGame
 
         public override void Draw(GameTime gameTime)
         {
-            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            spriteBatch.Begin();
             //Draw all the objects in the objectlist);
             foreach (GameObject go in objects)
             {

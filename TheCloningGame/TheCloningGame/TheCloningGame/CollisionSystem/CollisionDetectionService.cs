@@ -3,6 +3,7 @@
  */
 
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
 
 namespace TheCloningGame.CollisionSystem
@@ -57,7 +58,7 @@ namespace TheCloningGame.CollisionSystem
             {
                 for (int j = 0; j < collidables.Count; j++)
                 {   //Don't match an object with itself
-                    if(i == j)
+                    if (i == j)
                     {
                         continue;
                     }
@@ -84,6 +85,28 @@ namespace TheCloningGame.CollisionSystem
         public void RemoveAllObjects()
         {
             collidables.Clear();
+        }
+
+        /// <summary>
+        /// A function that checks if a colllidable before the real test runs
+        /// </summary>
+        /// <param name="goc">The object to check</param>
+        public List<GameObjectCollidable> CheckCollision(GameObjectCollidable goc)
+        {
+            List<GameObjectCollidable> temp;
+            temp = new List<GameObjectCollidable>();
+            for (int i = 0; i < collidables.Count; i++)
+            {
+                if (collidables[i] == goc)
+                {
+                    continue;
+                }
+                if (goc.CollisionBox.Intersects(collidables[i].CollisionBox))
+                {
+                    temp.Add(collidables[i]);
+                }
+            }
+            return temp;
         }
     }
 }

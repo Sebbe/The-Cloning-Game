@@ -97,9 +97,7 @@ Content\Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_07.xn
 Content\Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_08.xnb
 Content\Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_09.xnb
 Content\Audio\Nature_Ambience\Nature_Creatures\NightAmbientCreatureOneShot_10.xnb
-Content\Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_01.xnb
 Content\Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_02.xnb
-Content\Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_03.xnb
 Content\Audio\Nature_Ambience\Nature_Night_Loop\NightAmbienceSimple_01.xnb
 Content\Audio\Nature_Ambience\Nature_Night_Loop\NightAmbienceSimple_02.xnb
 Content\Audio\Nature_Ambience\Nature_Wind\AfternoonAmbientWindOneShot_01.xnb
@@ -173,3 +171,9 @@ Content\Audio\Whoosh\Whoosh4.xnb
 Content\Pictures\player_tileset.xnb
 Content\Pictures\beam_floor.xnb
 Content\Pictures\beam_wall.xnb
+Content\Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_01.xnb
+Content\Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_03.xnb
+Content\Pictures\door.xnb
+Content\Pictures\key.xnb
+Content\Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_01.wma
+Content\Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_03.wma

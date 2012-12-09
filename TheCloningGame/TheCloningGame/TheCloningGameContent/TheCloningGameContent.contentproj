@@ -528,7 +528,7 @@
     <Compile Include="Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_01.wav">
       <Name>AfternoonAmbienceSimple_01</Name>
       <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
+      <Processor>SongProcessor</Processor>
     </Compile>
     <Compile Include="Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_02.wav">
       <Name>AfternoonAmbienceSimple_02</Name>
@@ -538,7 +538,7 @@
     <Compile Include="Audio\Nature_Ambience\Nature_Day_Loop\AfternoonAmbienceSimple_03.wav">
       <Name>AfternoonAmbienceSimple_03</Name>
       <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
+      <Processor>SongProcessor</Processor>
     </Compile>
     <Compile Include="Audio\Nature_Ambience\Nature_Night_Loop\NightAmbienceSimple_01.wav">
       <Name>NightAmbienceSimple_01</Name>
@@ -907,6 +907,20 @@
     </Compile>
     <Compile Include="Pictures\beam_wall.png">
       <Name>beam_wall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pictures\door.png">
+      <Name>door</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pictures\key.png">
+      <Name>key</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

@@ -27,8 +27,8 @@ namespace TheCloningGame.CollisionSystem
             protected set
             {
                 collisionBox = value;
-                position.X = collisionBox.X;
-                position.Y = collisionBox.Y;
+                //position.X = collisionBox.X;
+                //position.Y = collisionBox.Y;
             }
         }
         /// <summary>
@@ -61,7 +61,7 @@ namespace TheCloningGame.CollisionSystem
         /// <param name="position">The position of the object</param>
         public GameObjectCollidable(Vector2 position)
         {
-            CollisionBox = new Rectangle((int)position.X, (int)position.Y, 0, 0);
+            //CollisionBox = new Rectangle((int)position.X, (int)position.Y, 0, 0);
             this.position = position;
         }
 

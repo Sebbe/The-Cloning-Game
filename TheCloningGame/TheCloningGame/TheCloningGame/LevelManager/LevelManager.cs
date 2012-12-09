@@ -20,8 +20,8 @@ namespace TheCloningGame.LevelManager
             TheSpriteBatch = spriteBatchToUse;
             CurLevelNR = 0;
 
-            ILevel levelOne = new LevelOne();
-            Levels.Add(levelOne);
+            Levels.Add(new LevelOne());
+            Levels.Add(new LevelTwo());
         }
 
         public ILevel NextLevel()

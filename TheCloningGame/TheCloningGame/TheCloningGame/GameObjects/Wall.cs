@@ -4,7 +4,7 @@ using TheCloningGame.CollisionSystem;
 
 namespace TheCloningGame.GameObjects
 {
-    public class Floor : GameObjectCollidable
+    public class Wall : GameObjectCollidable
     {
         protected SpriteBatch spriteBatch;
         protected Game game;
@@ -24,7 +24,7 @@ namespace TheCloningGame.GameObjects
 
         int _character = 0;
 
-        public Floor(Game baseGame, SpriteBatch spriteBatchToUse, Vector2 position, Vector2 size)
+        public Wall(Game baseGame, SpriteBatch spriteBatchToUse, Vector2 position, Vector2 size)
             : base(position)
         {
             spriteBatch = spriteBatchToUse;
@@ -35,10 +35,10 @@ namespace TheCloningGame.GameObjects
 
         public void LoadContent()
         {
-            Art = game.Content.Load<Texture2D>(@"Pictures/beam_floor");
+            Art = game.Content.Load<Texture2D>(@"Pictures/beam_wall");
             collisionBox.Width = (int)_size.X;
             collisionBox.Height = (int)_size.Y;
-            _sourceRectangle = new Rectangle(0, 0, 1024, 80);
+            _sourceRectangle = new Rectangle(0, 0, 80, 1024);
             objectManager = (ObjectManager)game.Services.GetService(typeof(ObjectManager));
             collisionManager = (IManageCollisionsService)game.Services.GetService((typeof(IManageCollisionsService)));
         }

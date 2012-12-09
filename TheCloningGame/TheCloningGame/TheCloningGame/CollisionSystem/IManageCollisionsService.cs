@@ -2,6 +2,7 @@
  * This code is made by Marius Brendmoe
  */
 
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 
 namespace TheCloningGame.CollisionSystem
@@ -26,5 +27,7 @@ namespace TheCloningGame.CollisionSystem
         void RemoveAllObjects();
 
         void Update(GameTime gameTime);
+
+        List<GameObjectCollidable> CheckCollision(GameObjectCollidable goc);
     }
 }
