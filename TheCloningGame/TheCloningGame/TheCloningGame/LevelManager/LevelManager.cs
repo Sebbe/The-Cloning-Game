@@ -32,6 +32,13 @@ namespace TheCloningGame.LevelManager
                 temp.Init(TheGame, TheSpriteBatch);
                 CurLevelNR++;
                 return temp;
+            } else
+            {
+                CurLevelNR = 0;
+                ILevel temp = Levels[CurLevelNR];
+                temp.Init(TheGame, TheSpriteBatch);
+                CurLevelNR++;
+                return temp;
             }
             return null;
         }

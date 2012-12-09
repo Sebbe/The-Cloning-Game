@@ -1,0 +1,15 @@
+Et spill hvor du styrer en person og gravitasjonen hans opp eller ned
+Man styrer med a og d og gravitasjonen styrer man med mellomrom
+
+Målet med spillet er å hente nøkkelen og låse opp døra for å komme til neste level
+
+Spillet har bare to levler og da man er ferdig med level to blir man sendt tilbake til level 1 ettersom det bare finnes to levler
+
+
+Man kan utvide spillet med f.eks at man ikke kan dette ned slik at man må skifte gravitasjon for å komme seg videre.
+Fjerne veggene slik at spilleren kan havne utenfor og dø
+Hvis man beveger seg så får man den farten man hadde da man snudde tyngekraften bortover også slik at den f.eks fikk en / oppover slik at man 
+kan komme inn gjennom hull i veggen som ikke har gulv eller tak ved siden av seg
+
+Det er veldig mye man kan utvikle spillet med for å gjøre det veldig gøy og kanskje gi ut som gratis spill? Spillet kan i hvertfall bli veldig
+gøy med tiden
